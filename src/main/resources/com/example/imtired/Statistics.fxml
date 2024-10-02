@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imtired.StatisticsWindowController">
+   <children>
+      <AnchorPane prefHeight="490.0" prefWidth="742.0">
+         <children>
+            <TableView fx:id="attemptsTable" layoutX="14.0" layoutY="23.0" prefHeight="447.0" prefWidth="717.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="23.0">
+              <columns>
+                <TableColumn fx:id="attemptNumberColumn" prefWidth="75.0" sortable="false" text="Attempt" />
+                  <TableColumn fx:id="numTriesColumn" minWidth="0.0" prefWidth="130.0" text="Tries" />
+                  <TableColumn fx:id="secretWord" prefWidth="130.0" text="Secret Word" />
+                  <TableColumn fx:id="isWinColumn" prefWidth="79.0" text="Win" />
+                <TableColumn fx:id="timeSpentColumn" prefWidth="294.0" text="Time Spent (s)" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
